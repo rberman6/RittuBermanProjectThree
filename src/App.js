@@ -1,10 +1,11 @@
 import './App.css';
 import Header from './Header';
 import MoviePoster from './MoviePoster';
+import Form from './Form';
 import { useEffect, useState } from 'react';
 
 // GENERAL PSEUDO CODE
-// 1. Page loads/mounts "upcoming movies" in theatre on page load via an API call. Movie data will be displayed once on page load.
+// 1. Page loads/mounts current "upcoming movies" in theatre on page load via an API call. Movie data will be displayed once on page load.
 // 2. Another separate API call is made on page load to fetch genre categories and create a drop down menu of all the genres. 
 // 3. This gives the user the option to filter the upcoming movies into categories based on genre after form submission.
 
@@ -45,6 +46,7 @@ function App() {
   return (
     <main className="wrapper">
       <Header />
+      <Form />
       {movieData.map((movie, key) => {
         return (
         // <p key={key}>{movie.title}</p>
