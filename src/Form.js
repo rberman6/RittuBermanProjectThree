@@ -5,6 +5,7 @@ import { useState, useEffect } from 'react';
 const Form = () => {
 
     const [genreFilter, setGenreFilter] = useState([]);
+    const [genreSelection, setGenreSelection] = useState("");
 
     useEffect( ()=> {
         fetchGenre();
@@ -34,15 +35,21 @@ const Form = () => {
             });
     };
 
-    
-
 
     return (
         <>
-            <select>
-
-            </select>
-        
+            <form>
+                <label htmlFor="genreSelection">Filter by genre:</label>
+                <select id="" name="">
+                    <option value="default" disabled>--Please choose a category--</option>
+                    {genreFilter.map((genre) => {
+                        return (
+                            <option key={genre.id} value={genre.id}>{genre.name}</option>
+                        )
+                    }) }
+                </select>
+                <button type="submit">Submit</button>
+            </form>
         </>
     )
 };
