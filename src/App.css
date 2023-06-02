@@ -13,16 +13,16 @@ html {
 }
 
 body {
-    background-color: #140939;
+    background-color: #100630;
 }
 
 h1, h2, h3 {
-  color: #000;
+  color: #FFF;
 }
 
 p {
   margin: 0;
-  color: black;
+  color: rgb(255, 255, 255);
  
 }
 
@@ -46,14 +46,14 @@ img {
   width: 250px;
   border-radius: 20px;
 }
-
+/* 
 .movieContainer {
   background-color: rgb(242, 239, 247);
   border: 24px solid rgb(242, 239, 247);
   border-radius: 20px;
   margin-top: 100px;
   margin-bottom: 25px;
-}
+} */
 
 .movieBlurb p {
   color: white;
