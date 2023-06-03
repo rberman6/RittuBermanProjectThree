@@ -4,12 +4,14 @@
 const MoviePoster = ( {movie} ) => {
     return (
         <>
-            <div className="movieContainer">
+            <li className="moviePosters">
                 <img src={`https://image.tmdb.org/t/p/original${movie.poster_path}`} alt={`Movie poster of the movie ${movie.title}`} />
+            </li>
+                
+            <div className="movieContainer">
                 <h2>{movie.title}</h2>
+                <p>{movie.vote_average}</p>
                 <p>{`Release date: ${movie.release_date}`}</p>
-            </div>
-            <div className="movieBlurb">
                 <p>{movie.overview}</p>
             </div>
         </>

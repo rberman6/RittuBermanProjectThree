@@ -3,7 +3,7 @@
 const Header = () => {
     return (
         <header>
-            <h1 className="mainHeading">Movie App</h1>
+            <h1 className="mainHeading">Movie Night</h1>
             <h2 className="tagline">Catchy tagline</h2>
         </header>
     )

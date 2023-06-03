@@ -17,45 +17,76 @@ body {
 }
 
 h1, h2, h3 {
-  color: #FFF;
+  color: #ffebcd;
 }
 
 p {
   margin: 0;
-  color: rgb(255, 255, 255);
- 
 }
 
 main {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  /* align-items: center; */
 }
 
 .wrapper {
   max-width: 1260px;
-  width: 90%;
+  width: 85%;
   margin: 0 auto;
 }
+
+/* FORM STYLES */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
 
 /* MOVIE GALLERY SECTION */
 
 img {
   display: block;
   height: 400px;
-  width: 250px;
+  width: 300px;
   border-radius: 20px;
 }
-/* 
-.movieContainer {
-  background-color: rgb(242, 239, 247);
-  border: 24px solid rgb(242, 239, 247);
-  border-radius: 20px;
-  margin-top: 100px;
-  margin-bottom: 25px;
-} */
 
-.movieBlurb p {
-  color: white;
-  font-style: italic;
+li {
+  list-style: none;
+}
+
+label {
+  color: #ffebcd;
+  margin-bottom: 18px;
+}
+
+select {
+  border-radius: 20px;
+  padding: 10px 5px;
+  border: 2px solid #ffebcd;
+  color: #ffebcd;
+  background-color: #100630;
+  margin-bottom: 20px;
+}
+
+button {
+  border-radius: 18px;
+  padding: 10px 25px;
+  background-color: rgb(172, 255, 113);
+  border: none;
+}
+
+.moviePosters {
+  margin-top: 30px;
+}
+
+.movieContainer p {
+  margin-top: 10px;
+  margin-bottom: 30px;
+  color: #ffebcd;
+  font-size: 0.8rem;
+  line-height: 1.5;
 }

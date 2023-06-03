@@ -46,7 +46,7 @@ const Form = ( { setMovieData } ) => {
         setGenreSelection(event.target.value);
     }
 
-    // Make another API call to fetch genre specific movies. Parameters include with_genres & the users genre selection from genreSelection state. This fetch call will only run after form submission by the user.
+    // Make another API call to fetch genre specific movies when user choose genre. Parameters include with_genres & the users genre selection from genreSelection state. This fetch call will only run after form submission by the user.
     const handleFilter = () => {
         const url = new URL(`https://api.themoviedb.org/3/discover/movie?`);
         url.search = new URLSearchParams({
@@ -89,7 +89,7 @@ const Form = ( { setMovieData } ) => {
                     value={genreSelection} 
                     onChange={handleChange}>
                         {/* create a dropdown menu of the genres by mapping through the api data stored in genreFilter */}
-                        <option value="" disabled>--Please choose a category--</option>
+                        <option value="" disabled>-- Please choose a category --</option>
                             {genreFilter.map((genre) => {
                             return (
                                 <option key={genre.id} value={genre.id}>{genre.name}</option>
