@@ -3,11 +3,11 @@ import { useState, useEffect } from 'react';
 // Genre filter pseudo code
 
 // Create a dropdown menu for user to select genre. This data will be coming from an api
-// store this api data in genreFilter state and render on the page as a drop down menu
-// create a an onChange event so when user selects the specifc genre it is stored in genreSelection state
+// store this api data in genreFilter state and render on page load as a drop down menu
+// create an onChange event so when user selects the specifc genre, it is stored in genreSelection state
 // when user clicks on submit button following genre selection another api call will be made and the movieData state will be updated and re-rendered on the page to show filtered movies based on users selected genre.
 
-// passing props from parent app to Form component
+// passing props from parent app to Form component. Here we passed the setMovieData state
 const Form = ( { setMovieData } ) => {
 
     const [genreFilter, setGenreFilter] = useState([]);
@@ -72,10 +72,14 @@ const Form = ( { setMovieData } ) => {
             });
     };
 
-    // function to run after form submission (i.e. API call to filter movies based on genreSelection)
+    // function to run after form submission (i.e. a different API call to filter movies based on users genreSelection). movieData state which is passed as props from the parent component will be updated and will re-render the filtered data.
     const handleSubmit = (event) => {
         event.preventDefault();
+        if (genreSelection === "") {
+        alert("Please select a category");
+        } else {
         handleFilter();
+        }
     }
 
     return (
@@ -85,7 +89,7 @@ const Form = ( { setMovieData } ) => {
                 <select 
                     id="" 
                     name="" 
-                    // value is user's selected genre as store in genreSelection state below.
+                    // value is user's selected genre as stored in genreSelection state below.
                     value={genreSelection} 
                     onChange={handleChange}>
                         {/* create a dropdown menu of the genres by mapping through the api data stored in genreFilter */}

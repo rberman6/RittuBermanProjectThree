@@ -13,7 +13,7 @@ import { useEffect, useState } from 'react';
 function App() {
     // 1C. store the movie API data of "Upcoming Movies" thats fetched in state.
     const [ movieData, setMovieData ] = useState([]);
-    // 1B. API call is made and will render movie data once on page load once.
+    // 1B. API call is made and will render movie data once on page load.
     useEffect(() => {
       fetchMovies();
       }, []);
@@ -42,7 +42,7 @@ function App() {
         console.log(error);
       });
   };
-  // Map through the array of movieData stored in movieData state and display it on the page. Key value also passed. Passed movieData via props into MoviePoster component to allow data to render on page.
+  // Map through the array of api movie data stored in movieData state and display it on the page. Key value also passed. Passed movieData via props into MoviePoster component to allow data to render on page.
   return (
     <main className="wrapper">
       <Header />

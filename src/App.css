@@ -79,7 +79,6 @@ body {
 
 /* FORM STYLES */
 
-
 form {
   display: flex;
   flex-direction: column;
@@ -93,7 +92,7 @@ label {
 
 select {
   border-radius: 20px;
-  padding: 10px 18px;
+  padding: 15px 18px;
   border: 2px solid #ffebcd;
   color: #ffebcd;
   background-color: #100630;
@@ -104,6 +103,7 @@ select {
 button {
   border-radius: 10px;
   padding: 10px 25px;
+  color: #100630;
   background-color: rgb(172, 255, 113);
   border: none;
   margin-bottom: 90px;
@@ -111,6 +111,7 @@ button {
 
 button:hover,
 button:focus {
+  color: #100630;
   background-color: #ffa96e;
 }
 
@@ -151,7 +152,7 @@ svg {
   margin-top: 10px;
   margin-bottom: 20px;
   color: #ffebcd;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   line-height: 1.5;
   font-family: 'Roboto';
 }
