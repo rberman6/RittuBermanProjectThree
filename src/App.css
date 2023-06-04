@@ -15,6 +15,7 @@ html {
 }
 
 body {
+    padding-top: 20px;
     background-color: #100630;
 }
 
@@ -65,11 +66,14 @@ body {
   text-align: center;
   padding-top: 40px;
   margin-bottom: 100px;
+  font-family: 'Limelight';
+  font-size: 2.9rem;
 }
 
 .tagline {
   margin-bottom: 100px;
   text-align: center;
+  font-family: 'Roboto';
 }
 
 
@@ -98,7 +102,7 @@ select {
 }
 
 button {
-  border-radius: 18px;
+  border-radius: 10px;
   padding: 10px 25px;
   background-color: rgb(172, 255, 113);
   border: none;
@@ -149,6 +153,7 @@ svg {
   color: #ffebcd;
   font-size: 0.8rem;
   line-height: 1.5;
+  font-family: 'Roboto';
 }
 
 .movieBlurb {
