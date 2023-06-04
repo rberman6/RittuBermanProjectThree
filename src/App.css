@@ -6,6 +6,8 @@ html { box-sizing: border-box;}
 
 .sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; border: 0; padding: 0; white-space: nowrap; clip-path: inset(100%); clip: rect(0 0 0 0); overflow: hidden;}
 
+
+
 /* BASE STYLES */
 
 html {
@@ -16,8 +18,14 @@ body {
     background-color: #100630;
 }
 
+ul {
+  padding: 0;
+  margin: 0;
+}
+
 h1, h2, h3 {
   color: #ffebcd;
+  margin: 0;
 }
 
 p {
@@ -36,26 +44,42 @@ main {
   margin: 0 auto;
 }
 
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+body {
+  animation: fadeIn 2s ease-in-out;
+}
+
+
+/* HEADER STYLES */
+
+.mainHeading {
+  text-align: center;
+  padding-top: 40px;
+  margin-bottom: 100px;
+}
+
+.tagline {
+  margin-bottom: 100px;
+  text-align: center;
+}
+
+
 /* FORM STYLES */
+
+
 form {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-
-
-/* MOVIE GALLERY SECTION */
-
-img {
-  display: block;
-  height: 400px;
-  width: 300px;
-  border-radius: 20px;
-}
-
-li {
-  list-style: none;
 }
 
 label {
@@ -65,11 +89,12 @@ label {
 
 select {
   border-radius: 20px;
-  padding: 10px 5px;
+  padding: 10px 18px;
   border: 2px solid #ffebcd;
   color: #ffebcd;
   background-color: #100630;
-  margin-bottom: 20px;
+  margin-top: 10px;
+  margin-bottom: 30px;
 }
 
 button {
@@ -77,16 +102,67 @@ button {
   padding: 10px 25px;
   background-color: rgb(172, 255, 113);
   border: none;
+  margin-bottom: 90px;
+}
+
+
+/* MOVIE GALLERY SECTION */
+
+img {
+  display: block;
+  height: 400px;
+  width: 300px;
+  border-radius: 20px;
+  opacity: 0.8;
+}
+
+li {
+  list-style: none;
 }
 
 .moviePosters {
+  margin-top: 20px;
+}
+
+.movieTitle {
   margin-top: 30px;
 }
 
 .movieContainer p {
   margin-top: 10px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   color: #ffebcd;
   font-size: 0.8rem;
   line-height: 1.5;
 }
+
+.movieBlurb {
+  padding-bottom: 80px;
+}
+
+/* // *** LARGE TABLET and DESKTOP LAYOUT *** //  */
+@media (min-width: 1000px) and (max-width: 2000px) {
+
+  ul {
+    padding-top: 30px;
+    margin-bottom: 40px;
+  }
+ 
+  .movieBlurb p {
+    margin-bottom: 0;
+  }
+  .moviePosters {
+    display: flex;
+    align-items: center;
+  }
+
+  .movieContainer {
+    padding-left: 100px;
+    padding-right: 30px;
+  }
+
+
+
+} 
+
+
