@@ -105,6 +105,11 @@ button {
   margin-bottom: 90px;
 }
 
+button:hover,
+button:focus {
+  background-color: #ffa96e;
+}
+
 
 /* MOVIE GALLERY SECTION */
 
@@ -126,6 +131,16 @@ li {
 
 .movieTitle {
   margin-top: 30px;
+}
+
+.iconRating {
+  display: flex;
+ margin-top: 10px;
+}
+
+svg {
+  margin-top: 5px;
+  margin-right: 10px;
 }
 
 .movieContainer p {
