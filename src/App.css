@@ -97,6 +97,7 @@ select {
   background-color: #100630;
   margin-top: 10px;
   margin-bottom: 30px;
+  cursor: pointer;
 }
 
 button {
@@ -107,6 +108,7 @@ button {
   border: none;
   margin-bottom: 90px;
   font-family: 'Roboto';
+  cursor: pointer;
 }
 
 button:hover,
@@ -165,13 +167,19 @@ svg {
 /* ******* FOOTER STYLES ******** */
 
 .footer {
-  background-color: #ffebcd;
+  text-align: center;
 }
 
-.footer p {
-  color: #100630;
+.footer a {
+  color: #ffebcd;
   font-size: 0.7rem;
+  padding-top: 50px;
+  padding-bottom: 35px;
+  cursor: pointer;
 }
+
+
+
 /* ******** RESPONSIVE DESIGN ******** */
 /* // *** LARGE TABLET and DESKTOP LAYOUT *** //  */
 @media (min-width: 1000px) and (max-width: 2000px) {

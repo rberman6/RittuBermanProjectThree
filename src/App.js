@@ -54,6 +54,7 @@ function App() {
           <MoviePoster movie={movie} key={key} />
         )
       })}
+      <Footer />
     </main>
   );
 
