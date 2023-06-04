@@ -2,7 +2,9 @@ import './App.css';
 import Header from './Header';
 import MoviePoster from './MoviePoster';
 import Form from './Form';
+import Footer from './Footer';
 import { useEffect, useState } from 'react';
+
 
 // GENERAL PSEUDO CODE
 // 1. Page loads/mounts current "upcoming movies" in theatre on page load via an API call. Movie data will be displayed once on page load.
