@@ -15,7 +15,7 @@ html {
 }
 
 body {
-    padding-top: 20px;
+    padding-top: 30px;
     background-color: #100630;
 }
 
@@ -178,11 +178,37 @@ svg {
   cursor: pointer;
 }
 
+.scroll {
+  margin-bottom: 65px;
+}
+
+.scroll a {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 1rem;
+  border-radius: 10px;
+  padding: 10px 25px;
+  color: #100630;
+  background-color: rgb(172, 255, 113);
+  border: none;
+  font-family: 'Roboto';
+}
+
+.scroll a:hover,
+.scroll a:focus {
+  color: #100630;
+  background-color: #ffa96e;
+  font-family: 'Roboto';
+}
 
 
 /* ******** RESPONSIVE DESIGN ******** */
 /* // *** LARGE TABLET and DESKTOP LAYOUT *** //  */
 @media (min-width: 1000px) and (max-width: 2000px) {
+
+  .mainHeading {
+    padding-top: 60px;
+  }
 
   ul {
     padding-top: 30px;
@@ -200,6 +226,10 @@ svg {
   .movieContainer {
     padding-left: 100px;
     padding-right: 30px;
+  }
+
+  .scroll {
+    margin-top: 70px;
   }
 
 
