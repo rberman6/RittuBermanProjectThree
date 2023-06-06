@@ -78,7 +78,7 @@ body {
 
 .tagline {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 0.78rem;
+  font-size: 0.7rem;
   color: #100630;
   animation: rightToLeft 15s infinite linear ;
 }
@@ -163,7 +163,7 @@ li {
 
 .iconRating {
   display: flex;
- margin-top: 10px;
+  margin-top: 10px;
 }
 
 svg {
@@ -183,6 +183,7 @@ svg {
 .movieBlurb {
   padding-bottom: 80px;
 }
+
 
 /* ******* FOOTER STYLES ******** */
 
@@ -253,7 +254,38 @@ svg {
   }
 
 
-
 } 
+
+/* // *** SMALL TABLET LAYOUT *** // */
+@media (min-width: 900px) and (max-width: 999px) {
+
+  ul {
+    margin-bottom: 50px;
+  }
+
+  .moviePosters {
+    display: flex;
+    padding-bottom: 50px;
+  }
+
+  .movieContainer {
+    width: 70%;
+    padding-left: 50px;
+  }
+
+    .movieContainer p {
+      font-size: 0.80rem;
+    }
+
+  .movieTitle {
+    margin-top: 0;;
+  }
+
+  .movieBlurb {
+    padding-bottom: 0;
+  }
+
+  
+}
 
 
