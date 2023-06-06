@@ -51,7 +51,7 @@ function App() {
       <Form setMovieData={setMovieData}/>
       {movieData.map((movie, key) => {
         return (
-          <MoviePoster movie={movie} key={key} />
+          <MoviePoster  movie={movie} key={key} />
         )
       })}
       <Footer />

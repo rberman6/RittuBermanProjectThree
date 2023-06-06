@@ -64,16 +64,32 @@ body {
 .mainHeading {
   text-align: center;
   padding-top: 40px;
-  margin-bottom: 100px;
+  margin-bottom: 90px;
   font-family: 'Limelight';
   font-size: 2.9rem;
 }
 
+.rightToLeft {
+  background-color: #ffebcd;
+  border-style: dashed none;
+  border-color: #100630;
+  padding: 10px 0;
+}
+
 .tagline {
-  margin-bottom: 100px;
-  text-align: center;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 1.4rem;
+  font-size: 0.78rem;
+  color: #100630;
+  animation: rightToLeft 15s infinite linear ;
+}
+
+@keyframes rightToLeft {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(60%);
+  }
 }
 
 
@@ -87,6 +103,8 @@ form {
 
 label {
   color: #ffebcd;
+  margin-top: 30px;
+  padding-top: 60px;
   margin-bottom: 18px;
   font-size: 1rem;
 }
