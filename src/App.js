@@ -1,8 +1,8 @@
 import './App.css';
-import Header from './Header';
-import MoviePoster from './MoviePoster';
-import Form from './Form';
-import Footer from './Footer';
+import Header from './components/Header';
+import MoviePoster from './components/MoviePoster';
+import Form from './components/Form';
+import Footer from './components/Footer';
 import { useEffect, useState } from 'react';
 
 

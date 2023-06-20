@@ -79,8 +79,9 @@ body {
 .tagline {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 0.7rem;
+  letter-spacing: 1px;
   color: #100630;
-  animation: rightToLeft 15s infinite linear ;
+  animation: rightToLeft 30s infinite linear ;
 }
 
 @keyframes rightToLeft {
@@ -88,7 +89,7 @@ body {
     transform: translateX(0%);
   }
   to {
-    transform: translateX(60%);
+    transform: translateX(90%);
   }
 }
 
@@ -253,6 +254,12 @@ svg {
     margin-top: 70px;
   }
 
+  .tagline {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 0.7rem;
+    color: #100630;
+    animation: rightToLeft 60s infinite linear;
+  }
 
 } 
 
