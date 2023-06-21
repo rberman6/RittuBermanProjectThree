@@ -1,6 +1,6 @@
-// this component will display movie poster, title, release date and short blurb of the movie.
+// This component will display movie poster, title, release date and short blurb of the movie.
 
-// passed props obj into MoviePoster component
+// Passed props obj into MoviePoster component
 const MoviePoster = ( {movie} ) => {
     return (
         <ul>

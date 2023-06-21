@@ -37,7 +37,6 @@ function App() {
         return response.json();
       })
       .then(dataApi => {
-        console.log(dataApi.results);  
         setMovieData(dataApi.results);
       })
       .catch(error => {
