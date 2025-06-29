@@ -23,7 +23,7 @@ const MoviePoster = ({ movie }) => {
               fill="#ffa96e"
             />
           </svg>
-          <p>{movie.vote_average}</p>
+          <p>{Math.round(movie.vote_average)}</p>
         </div>
         <p>{`Release date: ${movie.release_date}`}</p>
         <p className="movieBlurb">{movie.overview}</p>
